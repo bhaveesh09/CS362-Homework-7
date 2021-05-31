@@ -6,6 +6,7 @@ class testLeapYear(unittest.TestCase):
         case = LeapYear(-2000)
         self.assertEqual(case, False)
 
+
 if __name__ == '__main__':
     unittest.main()
- 
+
