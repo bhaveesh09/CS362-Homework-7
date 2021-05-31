@@ -16,11 +16,13 @@ def LeapYear(x):
 
 def FizzBuzz():
     for i in range(0,100,1):
-        if (i%3==0):
+        if (i%3==0 and i%5==0):
+            pass
+        elif (i%3==0):
             print("FIZZ")
             return "Fizz"
-        if (i%5==0):
-            pass
+        elif (i%5==0):
+            return "Buzz"
 
 
 

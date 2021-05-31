@@ -19,9 +19,11 @@ class testFizzBuzz(unittest.TestCase):
     def test_FizzBuzz(self):
         for i in range(0,100,1):
             case = FizzBuzz()
-            if (i%3==0):
+            if (i%3==0 and i%5==0):
+                self.assertEqual(case, "FizzBuzz")
+            elif (i%3==0):
                 self.assertEqual(case, "Fizz")
-            if (i%5==0):
+            elif (i%5==0):
                 self.assertEqual(case, "Buzz")
 
 if __name__ == '__main__':
