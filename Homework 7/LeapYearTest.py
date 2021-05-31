@@ -1,4 +1,4 @@
-from Programs import LeapYear
+from Programs import FizzBuzz, LeapYear
 import unittest
 
 class testLeapYear(unittest.TestCase):
@@ -15,8 +15,12 @@ class testLeapYear(unittest.TestCase):
         case = LeapYear(2005)
         self.assertEqual(case, False)
 
-
-
+class testFizzBuzz(unittest.TestCase):
+    def test_FizzBuzz(self):
+        for i in range(0,100,1):
+            case = FizzBuzz()
+            if (i%3==0):
+                self.assertEqual(case, "Fizz")
 
 if __name__ == '__main__':
     unittest.main()

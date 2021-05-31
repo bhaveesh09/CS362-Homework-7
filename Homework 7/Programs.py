@@ -14,7 +14,11 @@ def LeapYear(x):
         return False
         
 
-    
+def FizzBuzz():
+    for i in range(0,100,1):
+        if (i%3==0):
+            print("FIZZ")
+            return "Fizz"
 
 
 
