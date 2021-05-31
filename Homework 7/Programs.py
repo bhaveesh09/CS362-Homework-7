@@ -3,8 +3,12 @@ from ast import Pass
 
 def LeapYear(x):
     if (x<0):                #Now check if user input is a positive number
-        return Pass
-        
+        return False
+    elif (x % 4== 0) and (x % 100 != 0): #conditions for leap year updated
+        print(x, "is a leap year")
+        return True
+
+    
 
 
     
