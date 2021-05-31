@@ -1,5 +1,8 @@
 
 
+from symbol import pass_stmt
+
+
 def LeapYear(x):
     if (x<0):                #Now check if user input is a positive number
         return False
@@ -15,14 +18,18 @@ def LeapYear(x):
         
 
 def FizzBuzz():
-    for i in range(0,100,1):
+    for i in range(1,100,1):
         if (i%3==0 and i%5==0):
-            pass
+            print("FizzBuzz")
+            return "FizzBuzz"
         elif (i%3==0):
-            print("FIZZ")
+            print("Fizz")
             return "Fizz"
         elif (i%5==0):
+            print("Buzz")
             return "Buzz"
+        else:
+            pass
 
 
 
