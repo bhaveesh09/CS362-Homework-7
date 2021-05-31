@@ -1,5 +1,4 @@
 
-from ast import Pass
 
 def LeapYear(x):
     if (x<0):                #Now check if user input is a positive number
@@ -12,7 +11,7 @@ def LeapYear(x):
         return True
     else:
         print(x, "is not a leap year")
-        pass
+        return False
         
 
     
