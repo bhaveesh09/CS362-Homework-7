@@ -7,8 +7,10 @@ def LeapYear(x):
     elif (x % 4== 0) and (x % 100 != 0): #conditions for leap year updated
         print(x, "is a leap year")
         return True
+    elif (x % 400 == 0):
+        print(x, "is a leap year")
+        pass
 
-    
 
 
     
