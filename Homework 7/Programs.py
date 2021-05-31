@@ -19,6 +19,8 @@ def FizzBuzz():
         if (i%3==0):
             print("FIZZ")
             return "Fizz"
+        if (i%5==0):
+            pass
 
 
 

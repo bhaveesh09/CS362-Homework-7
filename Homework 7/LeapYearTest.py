@@ -21,6 +21,8 @@ class testFizzBuzz(unittest.TestCase):
             case = FizzBuzz()
             if (i%3==0):
                 self.assertEqual(case, "Fizz")
+            if (i%5==0):
+                self.assertEqual(case, "Buzz")
 
 if __name__ == '__main__':
     unittest.main()
