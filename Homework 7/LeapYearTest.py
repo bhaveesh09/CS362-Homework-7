@@ -11,6 +11,10 @@ class testLeapYear(unittest.TestCase):
     def test_leapYear3(self):
         case = LeapYear(4000)
         self.assertEqual(case, True)
+    def test_leapYear4(self):
+        case = LeapYear(2005)
+        self.assertEqual(case, False)
+
 
 
 

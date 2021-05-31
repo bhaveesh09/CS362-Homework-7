@@ -9,7 +9,13 @@ def LeapYear(x):
         return True
     elif (x % 400 == 0):
         print(x, "is a leap year")
+        return True
+    else:
+        print(x, "is not a leap year")
         pass
+        
+
+    
 
 
 
